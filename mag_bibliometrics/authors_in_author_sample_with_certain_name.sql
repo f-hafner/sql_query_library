@@ -1,6 +1,6 @@
 select * from author_sample 
 inner join (
-    select authorid, normalizendname
+    select authorid, normalizedname
     from authors
 ) using(authorid) 
 where normalizedname = "NAME_HERE"
