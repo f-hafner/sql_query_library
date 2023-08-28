@@ -5,7 +5,7 @@ inner join (
     from authors
 ) using (Authorid) 
 inner join (
-    select AuthorId, us_institutions_year, us_institutions_career 
+    select AuthorId, main_us_institutions_year, main_us_institutions_career 
     from author_info_linking
 ) using(Authorid)
 where normalizedname like "START_FIRSTNAME%" 
